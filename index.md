@@ -1,7 +1,6 @@
 <html>
 <head>
-	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-	<title>Speaker Recognition Toolkit</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 </head>
 <body lang="en-IN" bgcolor="#d5e9ea" dir="ltr">
 <p align="center" style="margin-top: 0.42cm; margin-bottom: 0.21cm; line-height: 100%; page-break-after: avoid">
