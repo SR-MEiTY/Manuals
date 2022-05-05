@@ -1,6 +1,15 @@
 <html>
 <head>
-<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 6.0.7.3 (Linux)"/>
+	<meta name="created" content="2022-05-05T14:35:31.117835069"/>
+	<meta name="changed" content="2022-05-05T14:48:01.952387795"/>
+	<style type="text/css">
+		@page { size: landscape; margin: 2cm }
+		p { margin-bottom: 0.25cm; line-height: 115% }
+		a:link { so-language: zxx }
+	</style>
 </head>
 <body lang="en-IN" bgcolor="#d5e9ea" dir="ltr">
 <p align="center" style="margin-top: 0.42cm; margin-bottom: 0.21cm; line-height: 100%; page-break-after: avoid">
@@ -28,5 +37,9 @@ required in the development of the project.</font></p>
 	<p style="margin-top: 0.5cm; margin-bottom: 0cm; line-height: 100%"><font face="Liberation Serif, serif">©</font><font face="Liberation Serif, serif">
 	Speaker Recognition Toolkit Development Team, IIT Dharwad.</font></p>
 </div>
+
+<a href="Available_Toolkits.html">Available Toolkits Details</a>
+<a href="SRS.html">Software Requirement Specifications</a>
+
 </body>
 </html>
