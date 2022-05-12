@@ -9,6 +9,7 @@
 		@page { size: landscape; margin: 2cm }
 		p { margin-bottom: 0.25cm; line-height: 115% }
 		a:link { so-language: zxx }
+		div {text-align: center;}
 	</style>
 </head>
 <body lang="en-IN" bgcolor="#d5e9ea" dir="ltr">
@@ -22,14 +23,42 @@ Technologies in Indian Languages</b></font></font></p>
 </p>
 <p align="center" style="margin-top: 0.11cm; margin-bottom: 0.21cm; line-height: 100%; page-break-after: avoid">
 <font face="Lobster Two"><font size="5" style="font-size: 18pt">Speaker
-Recognition Project, IIT Dharwad</font></font></p>
-<p align="center" style="margin-top: 0.11cm; margin-bottom: 0.21cm; line-height: 100%; page-break-after: avoid">
+Recognition Project</font></font>
 <font face="Lobster Two"><font size="5" style="font-size: 18pt">Sponsored
-by MeiTY, Govt. of India</font></font></p>
-<p><br/>
-<br/>
-
+by MeiTY, Govt. of India</font></font>
 </p>
+
+<div>
+<p>
+<a href="https://www.iitdh.ac.in/" target="_blank">
+<img src="images/IIT_Dharwad.png" alt="Indian Institute of Technology Dharwad, Karnataka" height="75">
+</a>
+
+<a href="https://iiitdwd.ac.in/" target="_blank">
+<img src="images/IIIT_Dharwad.png" alt="Indian Institute of Information Technology Dharwad, Karnataka" height="75">
+</a>
+
+<a href="https://www.kletech.ac.in/" target="_blank">
+<img src="images/KLE_Tech.png" alt="KLE Technological University, Hubli, Karnataka" height="75">
+</a>
+
+<a href="https://www.nitnagaland.ac.in/" target="_blank">
+<img src="images/NIT_Nagaland.png" alt="National Institute of Technology Nagaland" height="75">
+</a>
+
+
+<a href="https://www.cdac.in/index.aspx?id=kolkata" target="_blank">
+<img src="images/CDAC.jpeg" alt="C-DAC Centre @ Kolkata" height="75">
+</a>
+
+<a href="https://www.kluniversity.in/" target="_blank">
+<img src="images/KL_Univ.png" alt="KL University Vijayawada, Andhra Pradesh" height="75">
+</a>
+</p>
+</div>
+
+
+
 <p><font face="Calibri, sans-serif">This web page is developed to
 provide a compilation of various user manuals and help materials
 required in the development of the project.</font></p>

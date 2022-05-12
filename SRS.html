@@ -4,60 +4,74 @@
 	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
 	<title></title>
 	<meta name="generator" content="LibreOffice 6.0.7.3 (Linux)"/>
-	<meta name="created" content="2022-05-05T20:04:24.505851535"/>
-	<meta name="changed" content="2022-05-05T20:05:37.626149370"/>
+	<meta name="created" content="2022-05-05T20:04:24.505851500"/>
+	<meta name="changed" content="2022-05-12T16:50:01.278089765"/>
 	<style type="text/css">
 		@page { margin: 2cm }
-		p { margin-bottom: 0.25cm; line-height: 115% }
+		p { margin-bottom: 0.25cm; direction: ltr; color: #000000; line-height: 115%; orphans: 2; widows: 2 }
+		p.western { font-family: "Liberation Serif", "Times New Roman", serif; font-size: 12pt; so-language: en-IN }
+		p.cjk { font-family: "AR PL SungtiL GB"; font-size: 12pt; so-language: zh-CN }
+		p.ctl { font-family: "Lohit Devanagari"; font-size: 12pt; so-language: hi-IN }
 	</style>
 </head>
-<body lang="en-IN" dir="ltr">
-<p align="center" style="margin-top: 0.11cm; margin-bottom: 0.21cm; line-height: 100%; page-break-after: avoid">
-<font face="Liberation Sans, sans-serif"><font size="5" style="font-size: 18pt"><b>Speaker
-Recognition Toolkit – Requirement Specifications</b></font></font></p>
+<body lang="en-IN" text="#000000" dir="ltr">
+<p class="western" align="center" style="margin-bottom: 0cm; line-height: 100%">
+<u><b>Speaker Recognition Toolkit – Requirement Specifications</b></u></p>
+<p class="western" style="margin-bottom: 0cm; line-height: 100%"><br/>
+
+</p>
+<p class="western" style="margin-bottom: 0cm; line-height: 100%"><a name="docs-internal-guid-ddd2ba6d-7fff-a2ca-43"></a>
+<u><b>Modules</b></u></p>
 <ol>
-	<p align="justify" style="margin-bottom: 0cm; font-variant: normal; font-style: normal; line-height: 138%; background: transparent; text-decoration: none">
-	</p>
 	<li/>
-<p align="justify" style="margin-bottom: 0cm; font-variant: normal; font-style: normal; line-height: 138%; background: transparent; text-decoration: none"><a name="docs-internal-guid-ddd2ba6d-7fff-a2ca-4365-88ecf00585d6"></a>
-	<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><b><span style="background: transparent">Modules:</span></b></font></font></font></p>
+<p class="western" style="margin-bottom: 0cm; line-height: 100%">
+	Data processing</p>
 	<ol>
 		<li/>
-<p align="justify" style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; background: transparent; text-decoration: none">
-		<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">Data
-		processing (listing out wav files, checking sampling frequency,
-		chop long utterances (VAD),</span></font></font></font></p>
+<p class="western" style="margin-bottom: 0cm; line-height: 100%">
+		Listing out wav files</p>
 		<li/>
-<p align="justify" style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; background: transparent; text-decoration: none">
-		<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">Preprocessing
-		(ms, normalization, pre-emphasis, VAD),</span></font></font></font></p>
+<p class="western" style="margin-bottom: 0cm; line-height: 100%">
+		Checking sampling frequency</p>
 		<li/>
-<p align="justify" style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; background: transparent; text-decoration: none">
-		<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">Feature
-		extraction,</span></font></font></font></p>
+<p class="western" style="margin-bottom: 0cm; line-height: 100%">
+		Normalization: Mean-Max</p>
 		<li/>
-<p align="justify" style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; background: transparent; text-decoration: none">
-		<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">Background
-		model training (GMM-UBM, TV, TDNN-X-vector, custom model),</span></font></font></font></p>
+<p class="western" style="margin-bottom: 0cm; line-height: 100%">
+		VAD – segmentation to subutterance: Chop long utterances:
+		Development and enrollment utterances are chopped into 50s
+		segments. Test utterances are chopped into 10-60s segments</p>
 		<li/>
-<p align="justify" style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; background: transparent; text-decoration: none">
-		<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">Enrolment
-		(i-vector, x-vector, embedding vector extractor ),</span></font></font></font></p>
+<p class="western" style="margin-bottom: 0cm; line-height: 100%">
+		Feature Computation - MFCC</p>
 		<li/>
-<p align="justify" style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; background: transparent; text-decoration: none">
-		<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">post-processing
-		(LDA, WCCN, normalization),</span></font></font></font></p>
-		<li/>
-<p align="justify" style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; background: transparent; text-decoration: none">
-		<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">Front-end
-		classifier (PLDA, cosine distance),</span></font></font></font></p>
-		<li/>
-<p align="justify" style="margin-bottom: 0cm; font-variant: normal; font-style: normal; font-weight: normal; line-height: 138%; background: transparent; text-decoration: none">
-		<font color="#000000"><font face="Arial"><font size="2" style="font-size: 11pt"><span style="background: transparent">Inference
-		and API</span></font></font></font></p>
+<p class="western" style="margin-bottom: 0cm; line-height: 100%">
+		Feature vector selection w.r.t VAD</p>
 	</ol>
+	<li/>
+<p class="western" style="margin-bottom: 0cm; line-height: 100%">
+	Feature extraction,</p>
+	<li/>
+<p class="western" style="margin-bottom: 0cm; line-height: 100%">
+	Background model training (GMM-UBM, TV, TDNN-X-vector, custom
+	model),</p>
+	<li/>
+<p class="western" style="margin-bottom: 0cm; line-height: 100%">
+	Enrolment (i-vector, x-vector, embedding vector extractor ),</p>
+	<li/>
+<p class="western" style="margin-bottom: 0cm; line-height: 100%">
+	post-processing (LDA, WCCN, normalization),</p>
+	<li/>
+<p class="western" style="margin-bottom: 0cm; line-height: 100%">
+	Front-end classifier (PLDA, cosine distance),</p>
+	<li/>
+<p class="western" style="margin-bottom: 0cm; line-height: 100%">
+	Inference and API</p>
+	<li/>
+<p class="western" style="margin-bottom: 0cm; line-height: 100%">
+	Visualization (ROC, DET curves)</p>
 </ol>
-<p style="margin-bottom: 0cm; line-height: 100%"><br/>
+<p class="western" style="margin-bottom: 0cm; line-height: 100%"><br/>
 
 </p>
 </body>
