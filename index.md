@@ -54,7 +54,6 @@ Technologies in Indian Languages</b></font></font></p>
 <a href="https://www.kluniversity.in/" target="_blank">
 <img src="images/KL_Univ.png" alt="KL University Vijayawada, Andhra Pradesh" height="50">
 </a>
-</p>
 
 <a href="http://www.nitp.ac.in/php/home.php" target="_blank">
 <img src="images/NIT_Patna.png" alt="National Institute of Technology Patna" height="50">
