@@ -31,28 +31,28 @@ by MeiTY, Govt. of India</font></font>
 <div>
 <p>
 <a href="https://www.iitdh.ac.in/" target="_blank">
-<img src="images/IIT_Dharwad.png" alt="Indian Institute of Technology Dharwad, Karnataka" height="75">
+<img src="images/IIT_Dharwad.png" alt="Indian Institute of Technology Dharwad, Karnataka" height="50">
 </a>
 
 <a href="https://iiitdwd.ac.in/" target="_blank">
-<img src="images/IIIT_Dharwad.png" alt="Indian Institute of Information Technology Dharwad, Karnataka" height="75">
+<img src="images/IIIT_Dharwad.png" alt="Indian Institute of Information Technology Dharwad, Karnataka" height="50">
 </a>
 
 <a href="https://www.kletech.ac.in/" target="_blank">
-<img src="images/KLE_Tech.png" alt="KLE Technological University, Hubli, Karnataka" height="75">
+<img src="images/KLE_Tech.png" alt="KLE Technological University, Hubli, Karnataka" height="50">
 </a>
 
 <a href="https://www.nitnagaland.ac.in/" target="_blank">
-<img src="images/NIT_Nagaland.png" alt="National Institute of Technology Nagaland" height="75">
+<img src="images/NIT_Nagaland.png" alt="National Institute of Technology Nagaland" height="50">
 </a>
 
 
 <a href="https://www.cdac.in/index.aspx?id=kolkata" target="_blank">
-<img src="images/CDAC.jpeg" alt="C-DAC Centre @ Kolkata" height="75">
+<img src="images/CDAC.jpeg" alt="C-DAC Centre @ Kolkata" height="50">
 </a>
 
 <a href="https://www.kluniversity.in/" target="_blank">
-<img src="images/KL_Univ.png" alt="KL University Vijayawada, Andhra Pradesh" height="75">
+<img src="images/KL_Univ.png" alt="KL University Vijayawada, Andhra Pradesh" height="50">
 </a>
 </p>
 </div>
