@@ -22,10 +22,10 @@ Technologies in Indian Languages</b></font></font></p>
 
 </p>
 <p align="center" style="margin-top: 0.11cm; margin-bottom: 0.21cm; line-height: 100%; page-break-after: avoid">
-<font face="Lobster Two"><font size="5" style="font-size: 18pt">Speaker
-Recognition Project</font></font>
-<font face="Lobster Two"><font size="5" style="font-size: 18pt">Sponsored
-by MeiTY, Govt. of India</font></font>
+<font face="Lobster Two"><font size="5" style="font-size: 18pt">Speaker Recognition Project</font></font>
+</p>
+<p align="center" style="margin-top: 0.11cm; margin-bottom: 0.21cm; line-height: 100%; page-break-after: avoid">
+<font face="Lobster Two"><font size="5" style="font-size: 18pt">Sponsored by MeiTY, Govt. of India</font></font>
 </p>
 
 <div>
