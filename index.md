@@ -57,18 +57,46 @@ by MeiTY, Govt. of India</font></font>
 </p>
 </div>
 
-
-
-<p><font face="Calibri, sans-serif">This web page is developed to
-provide a compilation of various user manuals and help materials
+<div>
+<p><font face="Calibri, sans-serif">This web page is developed to provide a compilation of various user manuals and help materials
 required in the development of the project.</font></p>
+</div>
+
+
+
+<ul>
+<li><a href="SRS.html" target="_blank">Software Requirement Specifications</a></li>
+<li><a href="https://github.com/SR-MEiTY/i-SpeakR" target="_blank">i-SpeakR Toolkit Repository</a></li>
+</ul>
+
+
+<ul>
+<li>Tutorials
+<ul>
+<li><a href="https://keras.io/examples/audio/speaker_recognition_using_cnn/" target="_blank">Keras Speaker Recognition</a></li>
+<li><a href="https://dspace.mit.edu/handle/1721.1/70480" target="_blank">A Tutorial on Text-Independent Speaker Verification, MIT</a></li>
+<li><a href="https://www.sciencedirect.com/science/article/pii/S0167639317302637" target="_blank">Speaker Recognition from Whispered Speech</a></li>
+</ul>
+</li>
+</ul>
+
+<ul>
+<li>
+<a href="Available_Toolkits.html" target="_blank">Other available toolkits Details</a>
+<ul>
+<li><a href="https://speechbrain.github.io/" target="_blank">Speech Brain</a></li>
+<li><a href="https://www.idiap.ch/software/bob/docs/bob/bob.bio.spear/stable/index.html" target="_blank">Bob Spear</a></li>
+<li><a href="https://alize.univ-avignon.fr/" target="_blank">ALIZÉ</a></li>
+</ul>
+</li>
+
+</ul>
+
+
 <div title="footer">
 	<p style="margin-top: 0.5cm; margin-bottom: 0cm; line-height: 100%"><font face="Liberation Serif, serif">©</font><font face="Liberation Serif, serif">
 	Speaker Recognition Toolkit Development Team, IIT Dharwad.</font></p>
 </div>
-
-<a href="Available_Toolkits.html">Available Toolkits Details</a>
-<a href="SRS.html">Software Requirement Specifications</a>
 
 </body>
 </html>
