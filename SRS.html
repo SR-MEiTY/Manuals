@@ -5,7 +5,7 @@
 	<title></title>
 	<meta name="generator" content="LibreOffice 6.0.7.3 (Linux)"/>
 	<meta name="created" content="2022-05-05T20:04:24.505851500"/>
-	<meta name="changed" content="2022-05-12T16:50:01.278089765"/>
+	<meta name="changed" content="2022-05-19T19:48:33.242241317"/>
 	<style type="text/css">
 		@page { margin: 2cm }
 		p { margin-bottom: 0.25cm; direction: ltr; color: #000000; line-height: 115%; orphans: 2; widows: 2 }
@@ -15,63 +15,211 @@
 	</style>
 </head>
 <body lang="en-IN" text="#000000" dir="ltr">
-<p class="western" align="center" style="margin-bottom: 0cm; line-height: 100%">
+<p class="western" align="justify" style="margin-bottom: 0cm; line-height: 100%">
 <u><b>Speaker Recognition Toolkit – Requirement Specifications</b></u></p>
-<p class="western" style="margin-bottom: 0cm; line-height: 100%"><br/>
+<p class="western" align="justify" style="margin-bottom: 0cm; line-height: 100%">
+<br/>
 
 </p>
-<p class="western" style="margin-bottom: 0cm; line-height: 100%"><a name="docs-internal-guid-ddd2ba6d-7fff-a2ca-43"></a>
+<p class="western" align="justify" style="margin-bottom: 0cm; line-height: 100%"><a name="docs-internal-guid-ddd2ba6d-7fff-a2ca-43"></a>
 <u><b>Modules</b></u></p>
 <ol>
 	<li/>
-<p class="western" style="margin-bottom: 0cm; line-height: 100%">
-	Data processing</p>
+<p class="western" align="justify" style="margin-bottom: 0cm; line-height: 100%">
+	Data processing module</p>
 	<ol>
 		<li/>
-<p class="western" style="margin-bottom: 0cm; line-height: 100%">
-		Listing out wav files</p>
+<p class="western" align="justify" style="margin-bottom: 0cm; line-height: 100%">
+		<b>Listing out wav files</b> This part will have two options:</p>
+		<ol>
+			<li/>
+<p class="western" align="justify" style="margin-bottom: 0cm; line-height: 100%">
+			<b>Infer</b><span style="font-weight: normal">: This is for
+			Novides. Users n</span>eed to provide path to three separate
+			folders. All wav files in each set must be directly placed in the
+			respective folders without and sub-folders.</p>
+			<ol>
+				<li/>
+<p class="western" align="justify" style="margin-bottom: 0cm; line-height: 100%">
+				DEV – Development set files</p>
+				<li/>
+<p class="western" align="justify" style="margin-bottom: 0cm; line-height: 100%">
+				ENR – Enrollment set files</p>
+				<li/>
+<p class="western" align="justify" style="margin-bottom: 0cm; line-height: 100%">
+				TEST – Testing set files</p>
+				<p class="western" align="justify" style="margin-bottom: 0cm; line-height: 100%">
+				</p>
+			</ol>
+			<li/>
+<p class="western" align="justify" style="margin-bottom: 0cm; line-height: 100%">
+			<b>Specify</b><span style="font-weight: normal">: This option for
+			advanced users. User needs to provide path containing csv files.
+			The csv filename for development should start with “DEV”, csv
+			filename for enrollment should start with “ENR”, and the csv
+			filename for testing should start with “TEST”. The csv files
+			need to have the following fields:</span></p>
+			<ol>
+				<li/>
+<p class="western" align="justify" style="margin-bottom: 0cm; line-height: 100%">
+				<u><span style="font-weight: normal">u</span></u><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Liberation Serif, Times New Roman, serif"><font size="3" style="font-size: 12pt"><span lang="en-IN"><span style="font-style: normal"><u><span style="font-weight: normal"><span style="background: transparent">tterance_id</span></span></u></span></span></font></font></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Liberation Serif, Times New Roman, serif"><font size="3" style="font-size: 12pt"><span lang="en-IN"><span style="font-style: normal"><span style="font-weight: normal"><span style="background: transparent">:
+				Unique ID for each utterances listed in the csv file (required)</span></span></span></span></font></font></span></font></span></p>
+				<li/>
+<p class="western" align="justify" style="margin-bottom: 0cm; line-height: 100%">
+				<span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Liberation Serif, Times New Roman, serif"><font size="3" style="font-size: 12pt"><span lang="en-IN"><span style="font-style: normal"><u><span style="font-weight: normal"><span style="background: transparent">speaker_id</span></span></u></span></span></font></font></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Liberation Serif, Times New Roman, serif"><font size="3" style="font-size: 12pt"><span lang="en-IN"><span style="font-style: normal"><span style="font-weight: normal"><span style="background: transparent">:
+				Speaker ID corresponding to each utterance in the csv file
+				(required)</span></span></span></span></font></font></span></font></span></p>
+				<li/>
+<p class="western" align="justify" style="margin-bottom: 0cm; line-height: 100%">
+				<span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Liberation Serif, Times New Roman, serif"><font size="3" style="font-size: 12pt"><span lang="en-IN"><span style="font-style: normal"><u><span style="font-weight: normal"><span style="background: transparent">wav_path</span></span></u></span></span></font></font></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Liberation Serif, Times New Roman, serif"><font size="3" style="font-size: 12pt"><span lang="en-IN"><span style="font-style: normal"><span style="font-weight: normal"><span style="background: transparent">:
+				Path to the wav file for each utterance in the csv file
+				(required)</span></span></span></span></font></font></span></font></span></p>
+				<li/>
+<p class="western" align="justify" style="margin-bottom: 0cm; line-height: 100%">
+				<span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Liberation Serif, Times New Roman, serif"><font size="3" style="font-size: 12pt"><span lang="en-IN"><span style="font-style: normal"><u><span style="font-weight: normal"><span style="background: transparent">gender</span></span></u></span></span></font></font></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Liberation Serif, Times New Roman, serif"><font size="3" style="font-size: 12pt"><span lang="en-IN"><span style="font-style: normal"><span style="font-weight: normal"><span style="background: transparent">:
+				Gender of the speaker for each utterance (optional)</span></span></span></span></font></font></span></font></span></p>
+				<li/>
+<p class="western" align="justify" style="margin-bottom: 0cm; line-height: 100%">
+				<span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Liberation Serif, Times New Roman, serif"><font size="3" style="font-size: 12pt"><span lang="en-IN"><span style="font-style: normal"><u><span style="font-weight: normal"><span style="background: transparent">sensor</span></span></u></span></span></font></font></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Liberation Serif, Times New Roman, serif"><font size="3" style="font-size: 12pt"><span lang="en-IN"><span style="font-style: normal"><span style="font-weight: normal"><span style="background: transparent">:
+				Sensor used to record each utterance (optional)</span></span></span></span></font></font></span></font></span></p>
+				<li/>
+<p class="western" align="justify" style="margin-bottom: 0cm; line-height: 100%">
+				<span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Liberation Serif, Times New Roman, serif"><font size="3" style="font-size: 12pt"><span lang="en-IN"><span style="font-style: normal"><u><span style="font-weight: normal"><span style="background: transparent">language</span></span></u></span></span></font></font></span></font></span><span style="font-variant: normal"><font color="#000000"><span style="text-decoration: none"><font face="Liberation Serif, Times New Roman, serif"><font size="3" style="font-size: 12pt"><span lang="en-IN"><span style="font-style: normal"><span style="font-weight: normal"><span style="background: transparent">:
+				Language used for each utterance (optional)</span></span></span></span></font></font></span></font></span></p>
+			</ol>
+		</ol>
+		<p class="western" align="justify" style="margin-bottom: 0cm; line-height: 100%">
+		</p>
 		<li/>
-<p class="western" style="margin-bottom: 0cm; line-height: 100%">
-		Checking sampling frequency</p>
+<p class="western" align="justify" style="margin-bottom: 0cm; line-height: 100%">
+		<u><b>Checking sampling frequency</b></u>: By default <i><u>16000Hz</u></i>
+		is used as the sampling frequency. Users can specify a different
+		sampling frequency in the <i><u>config.ini</u></i> file.</p>
+		<p class="western" align="justify" style="margin-bottom: 0cm; line-height: 100%">
+		</p>
 		<li/>
-<p class="western" style="margin-bottom: 0cm; line-height: 100%">
-		Normalization: Mean-Max</p>
+<p class="western" align="justify" style="margin-bottom: 0cm; line-height: 100%">
+		<u><b>Normalization</b></u>: By default, the wav files are
+		normalized by <i><u>mean subtraction</u></i> and then <i><u>dividing
+		by the maximum</u></i> value. Users can add other normalization
+		strategies.</p>
+		<p class="western" align="justify" style="margin-bottom: 0cm; line-height: 100%">
+		</p>
 		<li/>
-<p class="western" style="margin-bottom: 0cm; line-height: 100%">
-		VAD – segmentation to subutterance: Chop long utterances:
-		Development and enrollment utterances are chopped into 50s
-		segments. Test utterances are chopped into 10-60s segments</p>
+<p class="western" align="justify" style="margin-bottom: 0cm; line-height: 100%">
+		<u><b>Sub-utterance computation</b></u> – Segmentation of the wav
+		files to sub-utterance is done. Development and enrollment
+		utterances are chopped into approximately <i><u>50s segments</u></i>.
+		Test utterances are chopped into approximately <i><u>[</u></i><i><u>10</u></i><i><u>s</u></i><i><u>,
+		</u></i><i><u>20s, 30s, 40s, 50s, </u></i><i><u>60</u></i><i><u>s]</u></i><i><u>
+		segments</u></i><span style="font-style: normal"><span style="text-decoration: none">.
+		</span></span><span style="font-style: normal"><span style="text-decoration: none">Care
+		is taken to split the utterances only at silence regions using
+		sample-wise VAD decisions. Voiced samples are selected based on
+		sample energies greater than a threshold of 60% of average energy
+		of the utterance.</span></span></p>
+		<p class="western" align="justify" style="margin-bottom: 0cm; line-height: 100%">
+		</p>
 		<li/>
-<p class="western" style="margin-bottom: 0cm; line-height: 100%">
-		Feature Computation - MFCC</p>
+<p class="western" align="justify" style="margin-bottom: 0cm; line-height: 100%">
+		<u><b>Feature Computation</b></u>: For each sub-utterance a feature
+		is computed.</p>
+		<ol>
+			<li/>
+<p class="western" align="justify" style="margin-bottom: 0cm; line-height: 100%">
+			MFCC: A flag is provided for user to choose whether c0 is required
+			or not. If c0 is not required, then N_MFCC+1 coefficients are
+			computed and c0 is ignored.</p>
+		</ol>
+		<p class="western" align="justify" style="margin-bottom: 0cm; line-height: 100%">
+		</p>
 		<li/>
-<p class="western" style="margin-bottom: 0cm; line-height: 100%">
-		Feature vector selection w.r.t VAD</p>
+<p class="western" align="justify" style="margin-bottom: 0cm; line-height: 100%">
+		<u><b>VAD</b></u><span style="font-style: normal"><span style="text-decoration: none"><span style="font-weight: normal">:
+		</span></span></span><span style="font-style: normal"><span style="text-decoration: none"><span style="font-weight: normal">The
+		computed features per frame are selected based on a VAD on the
+		frame-wise energy. The selected frames are stored as a feature file
+		in the output folder.</span></span></span></p>
+		<p class="western" align="justify" style="margin-bottom: 0cm; line-height: 100%">
+		</p>
 	</ol>
 	<li/>
-<p class="western" style="margin-bottom: 0cm; line-height: 100%">
-	Feature extraction,</p>
+<p class="western" align="justify" style="margin-bottom: 0cm; line-height: 100%">
+	Background model training  module</p>
+	<ol>
+		<li/>
+<p class="western" align="justify" style="margin-bottom: 0cm; line-height: 100%">
+		GMM-UBM</p>
+		<li/>
+<p class="western" align="justify" style="margin-bottom: 0cm; line-height: 100%">
+		T-Variability matrix computation</p>
+		<li/>
+<p class="western" align="justify" style="margin-bottom: 0cm; line-height: 100%">
+		TDNN X-vector</p>
+		<li/>
+<p class="western" align="justify" style="margin-bottom: 0cm; line-height: 100%">
+		Custom model</p>
+		<p class="western" align="justify" style="margin-bottom: 0cm; line-height: 100%">
+		</p>
+	</ol>
 	<li/>
-<p class="western" style="margin-bottom: 0cm; line-height: 100%">
-	Background model training (GMM-UBM, TV, TDNN-X-vector, custom
-	model),</p>
+<p class="western" align="justify" style="margin-bottom: 0cm; line-height: 100%">
+	Enrollment module</p>
+	<ol>
+		<li/>
+<p class="western" align="justify" style="margin-bottom: 0cm; line-height: 100%">
+		I-vector extraction</p>
+		<li/>
+<p class="western" align="justify" style="margin-bottom: 0cm; line-height: 100%">
+		X-vector extraction</p>
+		<p class="western" align="justify" style="margin-bottom: 0cm; line-height: 100%">
+		</p>
+	</ol>
 	<li/>
-<p class="western" style="margin-bottom: 0cm; line-height: 100%">
-	Enrolment (i-vector, x-vector, embedding vector extractor ),</p>
+<p class="western" align="justify" style="margin-bottom: 0cm; line-height: 100%">
+	Post-processing  module</p>
+	<ol>
+		<li/>
+<p class="western" align="justify" style="margin-bottom: 0cm; line-height: 100%">
+		LDA</p>
+		<li/>
+<p class="western" align="justify" style="margin-bottom: 0cm; line-height: 100%">
+		WCCN normalization</p>
+		<p class="western" align="justify" style="margin-bottom: 0cm; line-height: 100%">
+		</p>
+	</ol>
 	<li/>
-<p class="western" style="margin-bottom: 0cm; line-height: 100%">
-	post-processing (LDA, WCCN, normalization),</p>
+<p class="western" align="justify" style="margin-bottom: 0cm; line-height: 100%">
+	Front-end classifier module</p>
+	<ol>
+		<li/>
+<p class="western" align="justify" style="margin-bottom: 0cm; line-height: 100%">
+		PLDA</p>
+		<li/>
+<p class="western" align="justify" style="margin-bottom: 0cm; line-height: 100%">
+		Cosine distance</p>
+		<p class="western" align="justify" style="margin-bottom: 0cm; line-height: 100%">
+		</p>
+	</ol>
 	<li/>
-<p class="western" style="margin-bottom: 0cm; line-height: 100%">
-	Front-end classifier (PLDA, cosine distance),</p>
+<p class="western" align="justify" style="margin-bottom: 0cm; line-height: 100%">
+	Inference and Prototyping API  module</p>
+	<p class="western" align="justify" style="margin-bottom: 0cm; line-height: 100%">
+	</p>
 	<li/>
-<p class="western" style="margin-bottom: 0cm; line-height: 100%">
-	Inference and API</p>
-	<li/>
-<p class="western" style="margin-bottom: 0cm; line-height: 100%">
-	Visualization (ROC, DET curves)</p>
+<p class="western" align="justify" style="margin-bottom: 0cm; line-height: 100%">
+	Visualization module</p>
+	<ol>
+		<li/>
+<p class="western" align="justify" style="margin-bottom: 0cm; line-height: 100%">
+		ROC</p>
+		<li/>
+<p class="western" align="justify" style="margin-bottom: 0cm; line-height: 100%">
+		DET curves</p>
+	</ol>
 </ol>
-<p class="western" style="margin-bottom: 0cm; line-height: 100%"><br/>
+<p class="western" align="justify" style="margin-bottom: 0cm; line-height: 100%">
+<br/>
 
 </p>
 </body>
