@@ -92,6 +92,7 @@ required in the development of the project.</font></p>
 <li><a href="https://speechbrain.github.io/" target="_blank">Speech Brain</a></li>
 <li><a href="https://www.idiap.ch/software/bob/docs/bob/bob.bio.spear/stable/index.html" target="_blank">Bob Spear</a></li>
 <li><a href="https://alize.univ-avignon.fr/" target="_blank">ALIZÉ</a></li>
+<li><a href="https://projets-lium.univ-lemans.fr/sidekit/" target="_blank">SIDEKIT</li>
 </ul>
 </li>
 
