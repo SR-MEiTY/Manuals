@@ -90,6 +90,20 @@ width:100%;
 height:10%;
 border-bottom:2px solid black;
 }
+.menu_tab{
+width: 80%;
+padding: 2px;
+cursor: pointer;
+margin: 0 auto;
+background-color: rgba(225, 231, 240, 1);
+color: black;
+border-bottom: 1px solid black;
+}
+.menu_tab:hover{
+background-color: rgba(4, 43, 102, 1);
+color: white;
+border: 1px solid black;
+}
 </style>
 </head>
 
@@ -107,16 +121,15 @@ border-bottom:2px solid black;
 	<div class="left_header">
 	<p>Important links</p>
 	</div>
-	<p>
-	<a href="https://203.129.246.13:8888/" target="_blank">i-SpeakR DEMO</a>
-	</p>
-	<p>
-	<a href="SRS.html" target="_blank">Software Requirement Specifications</a></li>
-	</p>
-	<p>
-	<a href="https://github.com/SR-MEiTY/i-SpeakR" target="_blank">i-SpeakR Toolkit Repository</a>
-	</p>
-
+	<div onclick="window.open('https://indicasv.iitdh.ac.in/', '_blank');" class="menu_tab">
+	INDIC Speaker Recognition DEMO
+	</div>
+	<div onclick="window.open('SRS.html', '_blank');" class="menu_tab">
+	Software Requirement Specifications
+	</div>
+	<div onclick="window.open('https://github.com/SR-MEiTY/i-SpeakR', '_blank');" class="menu_tab">
+	i-SpeakR Toolkit Repository
+	</div>
 </div>
 
 <div class="dashboard">
