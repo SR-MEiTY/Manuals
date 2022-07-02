@@ -1,217 +1,93 @@
 <html>
-<head>
-<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-<title>Speaker Recognition, NTLM, MeitY, GoI</title>
-<meta name="generator" content="LibreOffice 6.0.7.3 (Linux)"/>
-<meta name="created" content="2022-05-05T14:35:31.117835069"/>
-<meta name="changed" content="2022-05-05T14:48:01.952387795"/>
-<style type="text/css">
-@page { size: landscape; margin: 2cm }
-.top_panel{
-width:100%;
-height:20%;
-border-bottom: 1px solid black;
-background-color: rgba(5, 100, 158, 1);
-color: white;
-padding: 5px;
-}
-.body_div{
-width:100%;
-height:70%;
-text-align:center;
-background-color: white;
-}
-.left_panel{
-width:20%;
-height:100%;
-border-right: 2px solid black;
-color: black;
-float: left;
-background-color: rgba(255, 255, 255, 0.5);
-}
-.dashboard{
-width:58%;
-height:100%;
-color: black;
-float: left;
-padding: 5px;
-}
-.right_panel{
-width:20%;
-height:100%;
-border-left: 2px solid black;
-color: black;
-float: right;
-background-color: rgba(255, 255, 255, 0.5);
-}
-.footer{
-width:100%;
-height:10%;
-border-top: 1px solid black;
-background-color: rgba(83, 45, 140, 1);
-color: rgba(230, 240, 141, 1);
-text-align: center;
-}
-.text3D{
-margin: 5px auto;
-text-align: center;
-color: blue;
-font-size: 15px;
-transition: 0.5s;
-font-family: Arial, Helvetica, sans-serif;
-}
-.text3D:hover{
-text-shadow: 0 1px 0 #ccc, 0 2px 0 #ccc,
-                0 3px 0 #ccc, 0 4px 0 #ccc,
-                0 5px 0 #ccc, 0 6px 0 #ccc,
-                0 7px 0 #ccc, 0 8px 0 #ccc,
-                0 9px 0 #ccc, 0 10px 0 #ccc,
-                0 11px 0 #ccc, 0 12px 0 #ccc,
-                0 20px 30px rgba(0, 0, 0, 0.5);
-}
-.tutorial_div{
-width: 50%;
-float: left;
-text-align: left;
-}
-.available_toolkit_div{
-width: 50%;
-float: left;
-text-align: left;
-}
-.info{
-width:100%; 
-height: 10%;
-border-bottom:1px solid rgba(245, 141, 5, 1);
-background-color: rgba(247, 228, 242, 1);
-}
-.left_header{
-width:100%;
-height:10%;
-border-bottom:2px solid black;
-}
-.menu_tab{
-width: 80%;
-padding: 2px;
-cursor: pointer;
-margin: 0 auto;
-background-color: rgba(225, 231, 240, 1);
-color: black;
-border-bottom: 1px solid black;
-}
-.menu_tab:hover{
-background-color: rgba(4, 43, 102, 1);
-color: white;
-border: 1px solid black;
-}
-</style>
-</head>
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+		<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,500&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/base_style.css">
+		<link rel="icon" type="image/x-icon" href="images/i-SpeakR_icon2.ico">
+		<title>i-SpeakR</title>
+	</head>
 
-<body lang="en-IN">
+	<body lang="en-IN">
 
-<div class="top_panel">
-	<p align="center">
-	<font face="Lobster Two" size="6" style="font-size: 28pt"><b>Speech Technologies in Indian Languages</b></font>
-	</p>
-	<p align="center" style="font-size: 14pt; font-family: Arial, Helvetica, sans-serif;">Speaker Recognition Project, Sponsored by MeiTY, Govt. of India</p>
-</div>
+		<div class="flex-container title_pane">
+			<img src="images/gov-logo-1.png" alt="MeitY, GoI, logo" title="MeitY, GoI">
+			<img src="images/i-SpeakR_icon2.bmp" alt="i-SpeakR logo" title="i-SpeakR" height="75px">
+		</div>
 
-<div class="body_div">
-<div class="left_panel">
-	<div class="left_header">
-	<p>Important links</p>
-	</div>
-	<div onclick="window.open('https://indicasv.iitdh.ac.in/', '_blank');" class="menu_tab">
-	INDIC Speaker Recognition DEMO
-	</div>
-	<div onclick="window.open('SRS.html', '_blank');" class="menu_tab">
-	Software Requirement Specifications
-	</div>
-	<div onclick="window.open('https://github.com/SR-MEiTY/i-SpeakR', '_blank');" class="menu_tab">
-	i-SpeakR Toolkit Repository
-	</div>
-	<div onclick="window.open('data/metadata_new.zip', '_blank');" class="menu_tab">
-	IITG-MV dataset meta files
-	</div>
-</div>
+		<div class="flex-container menu_pane">
+			<div class="menu_items hyperlink selected_menu">
+				Home
+			</div>
+			&emsp;
+			<div class="menu_items hyperlink" onclick="window.open('about.html', '_self');">
+				About
+			</div>
+			&emsp;
+			<div class="menu_items hyperlink" onclick="window.open('resources.html', '_self');">
+				Resources
+			</div>
+			&emsp;
+			<div class="menu_items hyperlink" onclick="window.open('demo.html', '_self');">
+				Demo
+			</div>
+			&emsp;
+			<div class="menu_items hyperlink" onclick="window.open('hands_on.html', '_self');">
+				Hands-on
+			</div>
+			<div class="empty_menu_item">
+			</div>
+		</div>
 
-<div class="dashboard">
-	<div class="info">
-	<p class="text3D">
-	This web page provides a compilation of various user manuals and help materials required in the development of the Indic Speaker Recognition project.
-	</p>
-	</div>
-	<div class="tutorial_div">
-		<h3>Tutorials</h3>
-		<ul>
-		<li><a href="https://keras.io/examples/audio/speaker_recognition_using_cnn/" target="_blank">Keras Speaker Recognition</a></li>
-		<li><a href="https://dspace.mit.edu/handle/1721.1/70480" target="_blank">A Tutorial on Text-Independent Speaker Verification, MIT</a>
-		</li>
-		<li><a href="https://www.sciencedirect.com/science/article/pii/S0167639317302637" target="_blank">Speaker Recognition from Whispered Speech</a>
-		</li>
-	</div>
+		<div class="flex-container dashboard">
+			<div class="content_space">				
+				<div class="heading1">Home</div>
+				<div class="subsection">
+					<div class="text">	
+						This web page provides a compilation of various user manuals and help materials required in the development of the Indic Speaker Recognition project.
+					</div>
+				</div>
 
-	<div class="available_toolkit_div">
-		<h3><a href="Available_Toolkits.html" target="_blank">Other available toolkits Details</a></h3>
-		<ul>
-		<li><a href="https://speechbrain.github.io/" target="_blank">Speech Brain</a></li>
-		<li><a href="https://www.idiap.ch/software/bob/docs/bob/bob.bio.spear/stable/index.html" target="_blank">Bob Spear</a></li>
-		<li><a href="https://alize.univ-avignon.fr/" target="_blank">ALIZÉ</a></li>
-		<li><a href="https://projets-lium.univ-lemans.fr/sidekit/" target="_blank">SIDEKIT</a></li>
-		</ul>
-	</div>
-</div>
+				<div class="heading2">Consortium Members</div>					
+				<div class="subsection">
+					<div onclick="window.open('https://www.cdac.in/index.aspx?id=kolkata', '_blank');" class="hyperlink"    >
+						<img src="images/CDAC.jpeg" alt="C-DAC Centre @ Kolkata" title="C-DAC Centre @ Kolkata" height="50">
+					</div>
+					
+					<div onclick="window.open('https://iiitdwd.ac.in/', '_blank');" class="hyperlink"    >
+						<img src="images/IIIT_Dharwad.png" alt="Indian Institute of Information Technology Dharwad, Karnataka" title="Indian Institute of Information Technology Dharwad, Karnataka" height="50">
+					</div>
 
-<div class="right_panel">
-	<div style="width:100%;height:10%;border-bottom:2px solid black;">
-	<p>Consortium Members</p>
-	</div>
-	<p>
-	<a href="https://www.cdac.in/index.aspx?id=kolkata" target="_blank">
-	<img src="images/CDAC.jpeg" alt="C-DAC Centre @ Kolkata" title="C-DAC Centre @ Kolkata" height="50">
-	</a>
+					<div onclick="window.open('https://www.iitdh.ac.in/', '_blank');" class="hyperlink"    >
+						<img src="images/IIT_Dharwad.png" alt="Indian Institute of Technology Dharwad, Karnataka" title="Indian Institute of Technology Dharwad, Karnataka" height="50">
+					</div>
 
-	<a href="https://iiitdwd.ac.in/" target="_blank">
-	<img src="images/IIIT_Dharwad.png" alt="Indian Institute of Information Technology Dharwad, Karnataka" title="Indian Institute of Information Technology Dharwad, Karnataka" height="50">
-	</a>
-	</p>
+					<div onclick="window.open('https://www.kletech.ac.in/', '_blank');" class="hyperlink"    >
+						<img src="images/KLE_Tech.png" alt="KLE Technological University, Hubli, Karnataka" title="KLE Technological University, Hubli, Karnataka" height="45">
+					</div>
 
-	<p>
-	<a href="https://www.iitdh.ac.in/" target="_blank">
-	<img src="images/IIT_Dharwad.png" alt="Indian Institute of Technology Dharwad, Karnataka" title="Indian Institute of Technology Dharwad, Karnataka" height="50">
-	</a>
+					<div onclick="window.open('https://www.kluniversity.in/', '_blank');" class="hyperlink"    >
+						<img src="images/KL_Univ.png" alt="KL University Vijayawada, Andhra Pradesh" title="KL University Vijayawada, Andhra Pradesh" height="45">
+					</div>
 
-	<a href="https://www.kletech.ac.in/" target="_blank">
-	<img src="images/KLE_Tech.png" alt="KLE Technological University, Hubli, Karnataka" title="KLE Technological University, Hubli, Karnataka" height="45">
-	</a>
-	</p>
+					<div onclick="window.open('https://www.nitnagaland.ac.in/', '_blank');" class="hyperlink"    >
+						<img src="images/NIT_Nagaland.png" alt="National Institute of Technology Nagaland" title="National Institute of Technology Nagaland" height="50"/>
+					</div>
 
-	<span>
-	<a href="https://www.kluniversity.in/" target="_blank">
-	<img src="images/KL_Univ.png" alt="KL University Vijayawada, Andhra Pradesh" title="KL University Vijayawada, Andhra Pradesh" height="45">
-	</a>
-	</span>
+					<div onclick="window.open('http://www.nitp.ac.in/php/home.php', '_blank');" class="hyperlink"    >
+						<img src="images/NIT_Patna.png" alt="National Institute of Technology Patna" title="National Institute of Technology Patna" height="50">
+					</div>
+				</div>
+			</div>
+		</div>
 
-	<span>
-	<a href="https://www.nitnagaland.ac.in/" target="_blank">
-	<img src="images/NIT_Nagaland.png" alt="National Institute of Technology Nagaland" title="National Institute of Technology Nagaland" height="50"/>
-	</a>
-	</span>
+		<div class="flex-container footer">
+			<div>© Designed and maintained by IIT Dharwad.</div>
+		</div>
 
-	<span>
-	<a href="http://www.nitp.ac.in/php/home.php" target="_blank">
-	<img src="images/NIT_Patna.png" alt="National Institute of Technology Patna" title="National Institute of Technology Patna" height="50">
-	</a>
-	</span>
-</div>
-</div>
-
-<div class="footer">
-	<p style="margin-top: 0.5cm; margin-bottom: 0cm; line-height: 100%">
-	<font face="Liberation Serif, serif">©</font>
-	<font face="Liberation Serif, serif">Speaker Recognition Toolkit Development Team, IIT Dharwad.</font>
-	</p>
-</div>
-
-</body>
+	</body>
 </html>
