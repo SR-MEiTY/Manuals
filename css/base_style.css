@@ -78,6 +78,7 @@ div {
 	color: gray;
 	display: block;
 	text-align: center;
+	text-decoration: underline;
 }
 .hyperlink{
 	cursor: pointer;
@@ -92,6 +93,10 @@ div {
 ul li {
 	text-align: left;
 }
+li:hover{
+	color: blue;
+	font-weight: 900;
+}
 .text{
 	text-align: justify;
 	text-justify: inter-word;
@@ -103,4 +108,27 @@ ul li {
 	text-align: center;
 	justify-content: center;
 }
-
+.display_tablet{
+	display: flex;
+	align-items: center;
+	text-align: center;
+	width: 200px;
+	height: 100px;
+	word-wrap: break-word;
+	font-weight: 900;
+	color: white;
+	font-size: 20px;
+	border-radius: 10px;
+	box-shadow: 1px 1px 3px 1px grey;
+	background-color: #171717;
+	opacity: 1;
+	background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #171717 17px ), repeating-linear-gradient( #676b6855, #676b68 );
+}
+.display_tablet:hover{
+	box-shadow: 3px 3px 5px 3px grey;
+	font-weight: 900;
+	color: black;
+	background-color: #c7cc46;
+	opacity: 1;
+	background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #c7cc46 17px ), repeating-linear-gradient( #2f914d55, #2f914d );
+}

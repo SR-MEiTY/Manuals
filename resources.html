@@ -10,6 +10,15 @@
 		<link rel="stylesheet" href="css/base_style.css">
 		<link rel="icon" type="image/x-icon" href="images/i-SpeakR_icon2.ico">
 		<title>i-SpeakR</title>
+		<script>
+			function hover() {
+				document.getElementById('github_logo').setAttribute('src', 'images/github_logo2.png');
+			}
+
+			function unhover() {
+				document.getElementById('github_logo').setAttribute('src', 'images/github_logo.png');
+			}
+		</script>
 	</head>
 
 	<body lang="en-IN">
@@ -47,24 +56,25 @@
 			<div class="content_space">				
 				<div class="heading1">Resources</div>
 				<div class="heading2">Important links</div>
-				<div class="subsection">
-					<div class="text">
-						<ul>
-						<li onclick="window.open('https://indicasv.iitdh.ac.in/', '_blank');" class="hyperlink">
+				<div class="subsection flex_container">
+
+					<div class="display_tablet hyperlink" onclick="window.open('https://indicasv.iitdh.ac.in/', '_blank');">
 						INDIC Speaker Recognition DEMO
-						</li>
-						<li onclick="window.open('SRS.html', '_blank');" class="hyperlink">
-						Software Requirement Specifications
-						</li>
-						<li onclick="window.open('https://github.com/SR-MEiTY/i-SpeakR', '_blank');" class="hyperlink">
-						i-SpeakR Toolkit Repository
-						</li>
-						<li onclick="window.open('data/metadata_new.zip', '_blank');" class="hyperlink">
-						IITG-MV dataset meta files
-						</li>
-						</ul>
 					</div>
+					<div class="display_tablet hyperlink" onclick="window.open('SRS.html', '_blank');">
+						Software Requirement Specifications
+					</div>
+					<div class="display_tablet hyperlink" onclick="window.open('https://github.com/SR-MEiTY/i-SpeakR', '_blank');" onmouseover="hover();" onmouseout="unhover();">
+						<img id="github_logo" src="images/github_logo.png"  alt="Github Repo" title="Github Repo" height="75px">
+						Github Repository
+					</div>
+					<div class="display_tablet hyperlink" onclick="window.open('data/metadata_new.zip', '_blank');">
+						IITG-MV dataset meta files
+					</div>
+
+
 				</div>
+
 
 				<div class="heading2">Tutorials</div>
 				<div class="subsection">
@@ -80,6 +90,7 @@
 						</li>
 						</ul>
 					</div>
+
 				</div>
 
 				<div class="heading2">Other available toolkits </div>
