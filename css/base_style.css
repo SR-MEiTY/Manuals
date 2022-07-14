@@ -59,16 +59,25 @@ div {
 	width: 100vw;
 }
 .content_space{
-	width: 80vw;
+	width: 95vw;
 	padding-top: 25px;
 }
 .heading1{
 	font-family: "Sofia", sans-serif;
 	font-weight: bold;
 	font-size: 50px;
-	padding: 5px 0px 10px 0px;
+	padding: 5px 10px 10px 10px;
 	color: gray;
 	display: block;	
+}
+.heading1_right{
+	font-family: "Sofia", sans-serif;
+	font-weight: bold;
+	font-size: 50px;
+	padding: 5px 10px 10px 10px;
+	color: gray;
+	display: block;
+	text-align: right;
 }
 .heading2{
 	font-family: 'Josefin Sans', sans-serif;
@@ -109,6 +118,26 @@ li:hover{
 	justify-content: center;
 }
 .display_tablet{
+	text-align: center;
+	display: flex;
+	align-items: center;
+	width: 200px;
+	height: 100px;
+	word-wrap: break-word;
+	font-weight: 500;
+	font-size: 20px;
+	border-radius: 10px;
+	box-shadow: 1px 1px 3px 1px grey;
+	background-color: rgba(216, 235, 240, 1);
+}
+.display_tablet:hover{
+	box-shadow: 3px 3px 5px 3px grey;
+	font-weight: 900;
+	color: white;
+	background-color: rgba(38, 81, 145,1);
+}
+/*
+.display_tablet{
 	display: flex;
 	align-items: center;
 	text-align: center;
@@ -132,12 +161,13 @@ li:hover{
 	opacity: 1;
 	background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #c7cc46 17px ), repeating-linear-gradient( #2f914d55, #2f914d );
 }
-.img_shadow{
+*/
+.logo_shadow{
 	border-radius: 15px; 
 	border: 3px solid #EEE;
 	box-shadow: 5px 5px 5px #BBF; 
 }
-.img_shadow:hover{
+.logo_shadow:hover{
 	/*filter: invert(100%);*/
 	box-shadow: 15px 15px 10px #BBF; 
 }
