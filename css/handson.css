@@ -1,0 +1,43 @@
+.handson_width{
+	width: 90vw !important;
+	margin: auto;
+}
+.tier2_menu_pane{
+	height: 75px;
+	margin: 10px auto 10px auto;
+	align-items: center;
+	justify-content: flex-start;
+}
+.tier2_menu_items{
+	display: flex;
+	align-items: center;
+	height: 70px;
+	border: 3px solid transparent;
+	border-bottom: 3px solid rgba(165, 94, 219, 1);
+	border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
+	padding-left:10px;
+	padding-right:10px;
+}
+.tier2_menu_items:hover{
+	border-top: 3px solid rgba(165, 94, 219, 1);
+	border-right: 3px solid rgba(165, 94, 219, 1);
+	border-left: 3px solid rgba(165, 94, 219, 1);
+	border-bottom: 3px solid transparent;
+}
+.tier2_selected_menu{
+	border-bottom: 3px solid transparent;
+	background-color: rgba(165, 94, 219, 1);
+	color: white;
+	font-weight: bold;
+}
+.tier2_empty_menu_item{
+	display: flex;
+	height: 35px;
+	width: 75px;
+}
+.handson_dashboard{
+	margin: 0px auto 30px auto;
+	box-shadow: 5px 5px 25px 25px rgba(165, 94, 219, 0.1);
+}
+

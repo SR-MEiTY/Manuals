@@ -1,0 +1,13 @@
+.indented_list_level1{
+	text-indent: 30px;
+}
+.indented_list_level2{
+	text-indent: 60px;
+}
+.indented_list_level3{
+	text-indent: 90px;
+}
+.indented_list_level4{
+	text-indent: 120px;
+}
+
