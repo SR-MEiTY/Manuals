@@ -6,15 +6,27 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	padding: 0;
 	border: 0;
 	outline: 0;
-	font-size: 100%;
+	font-size: 16px;
 	vertical-align: baseline;
 	background: transparent;
 }
-body {
+html, body {
+	width: 90%;
+    margin: auto;
 	font-family: "Fira Sans", sans-serif;
+}
+body{
+	position: relative;
+	color: rgba(47, 48, 47, 1);
+}
+ul li {
+	position: relative;
+	width: 100%;
+	text-align: left;
 }
 div {
 	word-wrap: break-word;
+	margin: 3px;
 }
 .flex-container {
 	display: flex;
@@ -22,32 +34,58 @@ div {
 	align-items: center;
 }
 .title_pane{
-	width: 100vw;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	position: relative;
+	width: 100%;
+	margin: 0 auto 1% auto;;
+	height: 15%;
 }
 .menu_pane{
-	width: 100vw;
+	position: relative;
+	width: 100%;
+	margin: auto;
+	height: 7%;
 	background-color: rgba(216, 235, 240, 1);
-	height: 40px;
-	align-items: left;
-	justify-content: flex-end;
-}
-.menu_items{
 	display: flex;
 	align-items: center;
-	height: 35px;
+	justify-content: flex-end;
+}
+.dashboard{
+	position: relative;
+	width: 80%;
+	margin: 0 auto 50px auto;
+	min-height: 65%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+.footer{
+	position: relative;
+	width: 100%;
+	margin: auto;
+	height: 20%;
+	text-align: center;
+	justify-content: center;
+	background-color: rgba(65, 99, 68, 1);
+	color: white;
+	font-size: 12px;
+}
+.menu_items{
+	position: relative;
+	height: 80%;
 	border-bottom: 5px solid transparent;
-	padding-left:10px;
-	padding-right:10px;
+	padding:10px;
+	display: flex;
+	align-items: center;
+	font-size: 900;
+	color: rgba(47, 48, 47, 1);
 }
 .menu_items:hover{
 	border-bottom: 5px solid rgba(28, 18, 222, 1);
 }
 .selected_menu{
 	background-color: rgba(28, 18, 222, 1);
-	color: white;
-	font-weight: bold;
+	color: rgba(237, 239, 242, 1);
+	font-weight: 900;
 	border-radius: 3px;
 }
 .empty_menu_item{
@@ -55,16 +93,20 @@ div {
 	height: 35px;
 	width: 75px;
 }
-.dashboard{
-	width: 100vw;
-	padding: 0px 0px 50px 0px;
-}
 .content_space{
-	width: 95vw;
-	padding-top: 5px;
+	position: relative;
+	width: 100%;
+}
+.subsection{
+	position: relative;
+	width: 100%;
+	margin: auto;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-around;
 }
 .heading1{
-	font-family: "DynaPuff", sans-serif;
+	font-family: "Yanone Kaffeesatz", sans-serif; /* "DynaPuff", sans-serif; */
 	font-weight: bold;
 	font-size: 35px;
 	padding: 3px 10px 3px 10px;
@@ -72,7 +114,7 @@ div {
 	display: block;	
 }
 .heading1_right{
-	font-family: "Sofia", sans-serif;
+	font-family: "Yanone Kaffeesatz", sans-serif;
 	font-weight: bold;
 	font-size: 50px;
 	padding: 3px 10px 3px 10px;
@@ -81,42 +123,30 @@ div {
 	text-align: right;
 }
 .heading2{
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'DynaPuff', sans-serif;
 	font-weight: bold;
-	font-size: 25px;
-	padding: 3px 0px 3px 0px;
+	font-size: 20px;
+	padding: 20px 0px 3px 0px;
 	color: gray;
 	display: block;
 	text-align: center;
-	text-decoration: underline;
 }
 .hyperlink{
 	cursor: pointer;
 }
-.subsection{
-	padding-top: 5px;
-	padding-bottom: 5px;
-	display: flex;
-	align-items: center;
-	justify-content: space-around;
-}
-ul li {
-	text-align: left;
-}
 .text{
+	position: relative;
+	width: 100%;
 	text-align: justify;
 	text-justify: inter-word;
+	margin: 10px;
+	padding: 5px;
+	border-radius: 5px;
+	box-shadow: 5px 5px 5px #BBF;
+	background-color: rgba(237, 239, 242, 1);
 }
-.footer{
-	position: relative;
-	bottom: 0px;
-	width: 100vw;
-	height: 25px;
-	border-top: 3px solid transparent;
-	text-align: center;
-	justify-content: center;
-	background-color: rgba(91, 171, 91, 1);
-	color: white;
+.text:hover{
+	box-shadow: 15px 15px 10px #BBF; 
 }
 .display_tablet{
 	text-align: center;
@@ -128,7 +158,7 @@ ul li {
 	font-weight: 500;
 	font-size: 20px;
 	border-radius: 10px;
-	box-shadow: 1px 1px 3px 1px grey;
+	box-shadow: 1px 1px 3px 1px gray;
 	background-color: rgba(216, 235, 240, 1);
 }
 .display_tablet:hover{
@@ -145,4 +175,12 @@ ul li {
 .logo_shadow:hover{
 	/*filter: invert(100%);*/
 	box-shadow: 15px 15px 10px #BBF; 
+}
+.left_col{
+	position: relative;
+	width: 20%;
+}
+.right_col{
+	position: relative;
+	width: 80%;
 }

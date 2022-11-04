@@ -1,43 +1,31 @@
-.handson_width{
-	width: 90vw !important;
-	margin: auto;
-}
 .tier2_menu_pane{
-	height: 75px;
-	margin: 10px auto 10px auto;
+	position: relative;
+	height: 60px;
+	width: 100%;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
 	align-items: center;
 	justify-content: flex-start;
 }
 .tier2_menu_items{
-	display: flex;
-	align-items: center;
-	height: 70px;
+	position: relative;
+	height: 50%;
 	border: 3px solid transparent;
-	border-bottom: 3px solid rgba(165, 94, 219, 1);
-	border-top-right-radius: 15px;
-	border-top-left-radius: 15px;
-	padding-left:10px;
-	padding-right:10px;
+	border-radius: 3px;
+	padding: 10px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 }
 .tier2_menu_items:hover{
-	border-top: 3px solid rgba(165, 94, 219, 1);
-	border-right: 3px solid rgba(165, 94, 219, 1);
-	border-left: 3px solid rgba(165, 94, 219, 1);
-	border-bottom: 3px solid transparent;
+	background-color: rgba(237, 239, 242, 1);
+	color: rgba(49, 65, 117, 1);
 }
 .tier2_selected_menu{
-	border-bottom: 3px solid transparent;
-	background-color: rgba(165, 94, 219, 1);
-	color: white;
-	font-weight: bold;
+	border: 3px solid transparent;
+	font-weight: 900;
+	border: 3px solid rgba(49, 65, 117, 1);
+	color: rgba(237, 239, 242, 1);
+	background-color: rgba(49, 65, 117, 1);
 }
-.tier2_empty_menu_item{
-	display: flex;
-	height: 35px;
-	width: 75px;
-}
-.handson_dashboard{
-	margin: 0px auto 30px auto;
-	box-shadow: 5px 5px 25px 25px rgba(165, 94, 219, 0.1);
-}
-

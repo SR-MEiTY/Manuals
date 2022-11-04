@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
@@ -7,6 +8,7 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,500&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:ital,wght@1,500&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="css/base_style.css">
 		<link rel="stylesheet" href="css/i-msv.css">
 		<link rel="icon" type="image/x-icon" href="images/i-SpeakR_icon2.ico">
@@ -33,8 +35,8 @@
 	<body lang="en-IN" onload="display_info('about')">
 
 		<div class="flex-container title_pane">
-			<img src="images/gov-logo-1.png" alt="MeitY, GoI, logo" title="MeitY, GoI">
-			<img src="images/i-SpeakR_icon2.bmp" alt="i-SpeakR logo" title="i-SpeakR" height="75px">
+			<a href="https://www.meity.gov.in/national-language-translation-mission"><img src="images/gov-logo-1.png" alt="MeitY, GoI, logo" title="MeitY, GoI"></a>
+			<a href="https://sr-meity.github.io/Manuals/"><img src="images/i-SpeakR_icon2.bmp" alt="i-SpeakR logo" title="i-SpeakR" height="75px"></a>
 		</div>
 
 		<div class="flex-container menu_pane">
@@ -54,7 +56,7 @@
 				I-MSV Challenge
 			</div>
 			&emsp;
-			<div class="menu_items hyperlink" onclick="window.open('https://indicasv.iitdh.ac.in/', '_self');"> <!-- https://indicasv.iitdh.ac.in/ -->
+			<div class="menu_items hyperlink" onclick="window.open('https://indicasv.iitdh.ac.in/', '_self');">
 				Demo
 			</div>
 			&emsp;
@@ -65,13 +67,14 @@
 			</div>
 		</div>
 
-		<div class="flex_col dashboard align_center">
-			<div class="heading1">Indic-Multilingual Speaker Verification (I-MSV) Challenge 2022</div>
-			<div class="content_space flex_row align_center">				
 
-				<div class="flex_col sub_menu align_center">
-					<div class="submenu_item hyperlink" id="about" onclick="display_info(this.id)">About the challenge</div>
-					<div class="submenu_item hyperlink" id="rules" onclick="display_info(this.id)"> I-MLSV Challenge 2022 Rules</div>
+		<div class="flex_col dashboard">
+			<div class="heading1">Indic-Multilingual Speaker Verification (I-MSV)</div>
+			<div class="content_space flex_row">				
+
+				<div class="flex_col sub_menu">
+					<div class="submenu_item hyperlink" id="about" onclick="display_info(this.id)">I-MSV Challenge 2022</div>
+					<div class="submenu_item hyperlink" id="rules" onclick="display_info(this.id)"> Rules</div>
 					<div class="submenu_item hyperlink" id="data" onclick="display_info(this.id)">Nature of Speech Data</div>
 					<div class="submenu_item hyperlink" id="submission" onclick="display_info(this.id)">Submission Guidelines</div>
 					<div class="submenu_item hyperlink" id="timeline" onclick="display_info(this.id)">Timeline</div>
@@ -79,8 +82,8 @@
 					<div class="submenu_item hyperlink" id="organizer" onclick="display_info(this.id)">Organizer</div>
 				</div>
 
-				<div class="information flex_col align_center">
-					<div class="information_item" id="about_info" style="display: block;">
+				<div class="information flex_col">
+					<div class="information_item align_center" id="about_info" style="display: block;">
 						<div class="text">
 
 							Speaker verification (SV) is the task of verifying whether an input utterance matches the claimed identity.  Though there exists an ample amount of research in  SV technologies, the development concerning a multilingual conversation is limited.  In a country like India, almost all the speakers are multilingual and the speaking style changes from one geographical region to another.  Consequently,  the development of a multilingual SV (MSV) system on the data collected in the Indian scenario is more challenging.  With this motivation, the COCOSDA INDIC- Multilingual Speaker Verification (I-MSV) Challenge 2022 has been designed for understanding and comparing the state-of-the-art  SV techniques using speech data from 13 Indian languages collected using five different sensors. The goal of this challenge is to make the SV system robust to language and sensor variations between enrollment and testing. There will be two types of tasks namely constrained SV and unconstrained SV involved in I-MSV Challenge 2022.
@@ -200,6 +203,8 @@
 				</div>
 			</div>
 		</div>
+
+
 
 		<div class="flex-container footer">
 			<div>© Designed and maintained by IIT Dharwad.</div>
